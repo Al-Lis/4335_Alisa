@@ -1,0 +1,139 @@
+﻿<Window x:Class="lab_7_8_rpm.part3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_7_8_rpm"
+        mc:Ignorable="d"
+        Title="part3" Height="450" Width="814">
+    <Grid Margin="25,0,0,0">
+        <TextBox Text="работа" Canvas.Left="10" Canvas.Top="53" Margin="191,196,490,156" >
+            <TextBox.RenderTransform >
+                <SkewTransform AngleX="10" AngleY="10" CenterX="50" CenterY="50" x:Name="second"></SkewTransform>
+
+            </TextBox.RenderTransform>
+            <TextBox.Triggers>
+                <EventTrigger RoutedEvent="GotFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="0" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="301,21,364,331"  Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="LostFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="10" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="10" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="50" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="50" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="191,196,490,156" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBox.Triggers>
+
+        </TextBox>
+
+
+
+        <TextBox Text="Лабораторная" Canvas.Left="10" Canvas.Top="53"  Margin="30,174,635,178" >
+            <TextBox.RenderTransform >
+                <SkewTransform AngleX="20" AngleY="20" CenterX="100" CenterY="100" ></SkewTransform>
+
+            </TextBox.RenderTransform>
+            <TextBox.Triggers>
+                <EventTrigger RoutedEvent="GotFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="0" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="301,21,364,331"  Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger  RoutedEvent="LostFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="20" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="20" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="100" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="100" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To=" 30,174,635,178"  Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBox.Triggers>
+
+        </TextBox>
+
+        <TextBox Text="7-8" Margin="487,221,176,133" >
+            <TextBox.RenderTransform>
+                <SkewTransform AngleX="-10" AngleY="-10" CenterX="-50" CenterY="-50" x:Name="third"></SkewTransform>
+            </TextBox.RenderTransform>
+
+            <TextBox.Triggers>
+                <EventTrigger RoutedEvent="GotFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="0" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="301,21,364,331"  Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger  RoutedEvent="LostFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="-10" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="-10" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="-50" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="-50" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="487,221,176,133"  Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBox.Triggers>
+
+        </TextBox>
+
+        <TextBox Margin="698,228,-25,130" Text="Задание 3">
+            <TextBox.RenderTransform>
+                <SkewTransform AngleX="-20" AngleY="-20" CenterX="-100" CenterY="-100" x:Name="four"></SkewTransform>
+            </TextBox.RenderTransform>
+            <TextBox.Triggers>
+                <EventTrigger RoutedEvent="GotFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="0" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="0" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="301,21,364,331"  Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger  RoutedEvent="LostFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleX"  To="-20" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.AngleY" To="-20" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterX" To="-100" Duration="0:0:1"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.CenterY" To="-100" Duration="0:0:1"/>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="698,228,-25,130"  Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBox.Triggers>
+        </TextBox>
+    </Grid>
+
+</Window>

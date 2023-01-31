@@ -1,0 +1,15 @@
+﻿<Window x:Class="lab_7_8_rpm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_7_8_rpm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+
+        <Button x:Name="btN" Width="30" Height="70" MouseEnter="btN_MouseEnter" Background="MediumPurple" />
+        <Button Content="следующее задание" Margin="632,340,23,36" Click="Button_Click"/>
+    </Grid>
+</Window>
