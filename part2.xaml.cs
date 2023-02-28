@@ -24,10 +24,7 @@ namespace lab_7_8_rpm
             InitializeComponent();
         }
 
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-
-        //}
+      //ком для лабы
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

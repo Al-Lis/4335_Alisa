@@ -11,5 +11,6 @@
 
         <Button x:Name="btN" Width="30" Height="70" MouseEnter="btN_MouseEnter" Background="MediumPurple" />
         <Button Content="следующее задание" Margin="632,340,23,36" Click="Button_Click"/>
+		<Button Content="лаба"></Button> 
     </Grid>
 </Window>
